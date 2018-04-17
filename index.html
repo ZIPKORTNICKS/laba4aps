@@ -40,6 +40,8 @@
       <input class="form-control" id="filename" placeholder="filename">
 	    <button type="submit" class="btn btn-primary" id="getData">Get</button>
 		 <button type="submit" class="btn btn-primary" id="sendData">Send</button>
+		 
+		 <image src="" id="image"/>
     </div>
   </div>
   
@@ -179,6 +181,7 @@ reference.getDownloadURL().then(function(url) {
 $('#image').attr("src", url);
 console.log(url);
 });
+
 });
 				document.getElementById('files').addEventListener('change', handleFileSelect, false);
 				
